@@ -3,9 +3,9 @@ provider "aws" {
 }
 
 resource "aws_instance" "one" {
-  ami           = "ami-0208b77a23d891325"
+  ami           = "ami-0453ec754f44f9a4a"
   instance_type = "t2.micro"
   tags = {
-    Name = "raham-server"
+    Name = "terraform"
   }
 }
