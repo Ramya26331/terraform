@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "one" {
 count           =  10
-ami             = "ami-0453ec754f44f9a4a"
+ami             = "0ca9fb66e076a6e32"
   instance_type = "t2.micro"
   tags = {
     Name = "terraform"
