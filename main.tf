@@ -3,16 +3,16 @@ region = "us-east-1"
 }
 
 resource "aws_instance" "one" {
-count = 5
-ami = "ami-0ddc798b3f1a5117e"
+count = 4
+ami = "ami-03d0482bdae49b626"
 instance_type = "t2.medium"
-key_name = "swikp"
-vpc_security_group_ids = ["sg-05f044979e305302e"]
+key_name = "jaikeypair"
+vpc_security_group_ids = ["sg-00c149e94e24198ce"]
 tags = {
 Name = var.instance_names[count.index]
 }
 }
 
 variable "instance_names" {
-default = ["jenkins", "nexus", "AppServer-1", "AppServer-2", "Monitoring server"]
+default = ["jenkins", "nexus", "tomcat-1", "tomcat-2"]
 }
