@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "one" {
   count         = 4
-  ami           = "ami-0866a3c8686eaeeba"
+  ami           = "ami-0f214d1b3d031dc53"
   instance_type = "t2.medium"
   tags = {
     Name = "ramya"
